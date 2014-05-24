@@ -2,10 +2,14 @@
  * Created by Evgenia on 5/24/2014.
  */
 
+//var home = "http://localhost:63342/research";
+var home = "https://evgeniagolubyeva.github.io/research";
+
 var client_id = "d949653473474f228b456e888250adfe";
 var client_secret = "38cb172583c84cf1b7d5ebb7a3be990b";
-var redirect_uri = "https://evgeniagolubyeva.github.io/research?after";
-var redirect_uri2 = "https://evgeniagolubyeva.github.io/research";
+//var redirect_uri = home + "/after.html";
+var redirect_uri = home + "?after";
+var redirect_uri2 = home;
 var apiName = "OpenApiBP";
 
 jQuery(function ($) {
@@ -38,7 +42,7 @@ function afterloaded() {
 
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open("GET", url, false);
-        xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+        xmlHttp.setRequestHeader("Accept", "*/*");
         xmlHttp.send(null);
         console.log(xmlHttp.responseText);
     }
