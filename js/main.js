@@ -31,7 +31,7 @@ function afterloaded() {
         "&redirect_uri=" + redirect_uri2 +
         "&code=" + code;
 
-    var xmlHttp = new XDomainRequest();
+    var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", url, false);
     xmlHttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xmlHttp.send(null);
