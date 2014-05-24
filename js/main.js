@@ -5,7 +5,7 @@
 var client_id = "d949653473474f228b456e888250adfe";
 var client_secret = "38cb172583c84cf1b7d5ebb7a3be990b";
 var redirect_uri = "https://evgeniagolubyeva.github.io/research/after.html";
-var redirect_uri2 = "https://evgeniagolubyeva.github.io/research/after2.html";
+var redirect_uri2 = "https://evgeniagolubyeva.github.io/research";
 var apiName = "OpenApiBP";
 
 jQuery(function ($) {
