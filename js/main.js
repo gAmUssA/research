@@ -24,7 +24,7 @@ function afterloaded() {
     var href = location.href;
 
     console.log("here");
-    if (href == "https://evgeniagolubyeva.github.io/research?after")
+    if (href.match(/after/))
     {
         console.log("in if");
         var code = href.match(/code=([^]+)/)[1];
