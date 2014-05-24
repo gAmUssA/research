@@ -23,8 +23,10 @@ function afterloaded() {
     var location = window.location;
     var href = location.href;
 
+    console.log("here");
     if (href == "https://evgeniagolubyeva.github.io/research?after")
     {
+        console.log("in if");
         var code = href.match(/code=([^]+)/)[1];
 
         var url = "http://sandboxapi.ihealthlabs.com/OpenApiV2/OAuthv2/userauthorization/" +
