@@ -4,7 +4,6 @@ import javax.inject.Singleton;
  * @author Evgenia
  */
 
-@Singleton
 public class HealthLabsInfo {
     public static final String iHealthAuthorizationUrl = "http://sandboxapi.ihealthlabs.com/openapiv2/OAuthv2/userauthorization/";
     public static final String iHealthOpenApiUrl = "http://sandboxapi.ihealthlabs.com/openapiv2/";
