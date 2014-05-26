@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+//dependencies of project
+repositories {
+    jcenter()
+
+    maven {
+        url = "https://oss.sonatype.org/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    providedCompile 'javax:javaee-api:7.0'
+    runtime 'org.glassfish:javax.json:1.0.4'
+}
